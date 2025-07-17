@@ -8,12 +8,17 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="animated-text">🎉 Happy Birthday, Mansi! 🎉</h1>
+    <h1 class="animated-text">🎉 Happy Birthday, <span id="friendName">Friend</span>! 🎉</h1>
     <video autoplay muted loop controls class="birthday-video">
       <source src="https://vfbqk33j3zygubyf.public.blob.vercel-storage.com/birthdayVideo.mp4"/>
       Your browser does not support the video tag.
     </video>
     <p class="message">Wishing you a magical day filled with love, joy, and cake! 🎂</p>
   </div>
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get("name") || "Friend"; // fallback to "Friend"
+  document.getElementById("friendName").textContent = name;
+</script>
 </body>
 </html>
