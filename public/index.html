@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Birthday!</title>
   <link rel="stylesheet" href="/style.css" />
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WTGTQHXN');</script>
+  <!-- End Google Tag Manager -->
 </head>
+
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTGTQHXN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div class="container">
     <h1 class="animated-text">🎉 Happy Birthday, <span id="friendName">Friend</span>! 🎉</h1>
     <video autoplay muted loop controls class="birthday-video">
-      <source src="https://vfbqk33j3zygubyf.public.blob.vercel-storage.com/birthdayVideo.mp4"/>
+      <source src="https://vfbqk33j3zygubyf.public.blob.vercel-storage.com/birthdayVideo.mp4" />
       Your browser does not support the video tag.
     </video>
     <p class="message">Wishing you a magical day filled with love, joy, and cake! 🎂</p>
   </div>
   <script>
-  const params = new URLSearchParams(window.location.search);
-  const name = params.get("name") || "Friend"; // fallback to "Friend"
-  document.getElementById("friendName").textContent = name;
-</script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name") || "Friend"; // fallback to "Friend"
+    document.getElementById("friendName").textContent = name;
+  </script>
 </body>
+
 </html>
+<!-- https://birthday-site-git-main-jayants-projects-445bff57.vercel.app/?name=Ankush -->>
